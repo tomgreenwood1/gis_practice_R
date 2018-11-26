@@ -8,7 +8,7 @@ library(RColorBrewer)
 register_google(key = "insert.key")
 
 # Read shapefile using OGR
-shp = "T:/live/7008 hAQUAthon/02 Delivery/002 Spatial data/Anonymous files/anonymous shapefiles/DMA_2601_and_9936_Boundaries.shp"
+shp = "insert.file.path"
 myshp = readOGR(shp, layer = basename(str_split(shp, "\\.")[[1]])[1]) # This is a fancy way of being lazy, so I do not need to type the layer name in
 
 # Convert to lat long
